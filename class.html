@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<title>HU.guitar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("image/DSC_0786.JPG");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide"><img src="image/2022-01-18 115400.JPG" height="30px"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small"><a href="index.html" class="w3-bar-item w3-button"><em class="fa fa-hand-o-right"></em> About</a> <a href="members.html" class="w3-bar-item w3-button"><em class="fa fa fa-child"></em> Members</a> <a href="activity.html" class="w3-bar-item w3-button"><em class="fa fa-camera-retro"></em> Activity</a> <a href="class.html" class="w3-bar-item w3-button"><em class="fa fa-pencil-square-o"></em> Class</a> <a href="contact.html" class="w3-bar-item w3-button"><em class="fa fa-envelope"></em> Contact</a></div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+  <a href="members.html" onclick="w3_close()" class="w3-bar-item w3-button">Members</a>
+  <a href="activity.html" onclick="w3_close()" class="w3-bar-item w3-button">Activity</a>
+  <a href="class.html" onclick="w3_close()" class="w3-bar-item w3-button">Class</a>
+  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+</nav>
+
+<!-- Pricing Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+  <h3>Class</h3>
+  <p class="w3-large">Choose a class that you want</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">基礎班</li>
+        <li class="w3-padding-16"><b>2堂課</b> 一週</li>
+        <li class="w3-padding-16"><b>週一</b> 社團老師</li>
+        <li class="w3-padding-16"><b>週四</b> 社幹教學</li>
+        <li class="w3-padding-16"><b>分組</b> 幹部額外教學</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 2500</h2>
+          <span class="w3-opacity">one time</span>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-48">社團幹部</li>
+        <li class="w3-padding-16"><b>課前</b> 搶先學習</li>
+        <li class="w3-padding-16"><b>社課</b> 助教or分組教學</li>
+        <li class="w3-padding-16"><b>開團</b> 表演機會++</li>
+        <li class="w3-padding-16"><b>活動總召</b> 訓練自身</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">Free</h2>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">進階班</li>
+        <li class="w3-padding-16"><b>一堂課</b> 一週</li>
+        <li class="w3-padding-16"><b>時間</b> 彈性</li>
+        <li class="w3-padding-16"><b>1 to 1</b> 教學長教學</li>
+        <li class="w3-padding-16"><b>私下</b> 幹部額外教學</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">Free</h2>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/huguitarclub" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    　
+	<a href="https://www.instagram.com/huguitar2020/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+	　  
+	<a href="https://www.youtube.com/user/huguitar101" target="_blank"><i class="fa fa-youtube-play w3-hover-opacity"></i></a>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
